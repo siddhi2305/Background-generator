@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    <link rel="stylesheet" href="index.css">
+    <!--font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Oswald:wght@200;300;400;500;600;700&family=Staatliches&display=swap"
+        rel="stylesheet">
+    <!--for icons-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body id ="bgcolor">
+
+    <section class="form1">
+        <div class="container">
+            <h2 class="title">Background Generator</h2><br>
+            <div class="select-form">
+                <div>
+                    <select name="color" id="select-box" class="select-box" >
+
+                        <option value="" selected>Select Type Of Background</option>
+                        <option value="gradient">Gradient</option>
+                        <option value="basic" >Basic</option>
+                    </select><br>
+                </div>
+            </div>
+            <div class="inputs" id="inputs">
+                <div class=gradient id="input1">
+                    <label>Pick The Colors : </label>
+                    <input type="color" class="effect" id="color1" value="#f98080" >
+                    <input type="color" class="effect" id="color2"  value="#a7d1fb">
+                </div>
+                <div class="basic" id="input2">
+                    <label>Pick The Color : </label>
+                    <input type="color" class="effect" id="color3" value="#fff">
+                </div>
+            </div><br><br>
+            <h4 id="showValue" class="colorCode">  </h4>
+        </div>
+    </section>
+    <script src="index.js">
+    </script>
+</body>
+
+</html>
